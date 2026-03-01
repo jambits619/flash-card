@@ -2,6 +2,7 @@
 
 #Project URL
 https://github.com/jambits619/flash-card
+https://roadmap.sh/projects/flash-cards
 
 ## Description
 A simple static website that utilize flash card application for learning 
