@@ -1,9 +1,7 @@
 # flash-card
 
-## Live-Demo
-https://jambits619.github.io/flash-card/
 
-#Project URL
+## Project URL
 https://github.com/jambits619/flash-card
 
 ## Description
