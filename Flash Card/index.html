@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Flash Card</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="flash-card text-center">
+            <span class="site-title">FLASH CARD</span>
+            <div class="progress">
+                <div class="progress-bar" id="progress" data-value="0" style="width: 0%">
+                    <span class="percent-bar" id="progressPercent">no%</span>
+                </div>
+            </div>
+
+            <span class="no-of-items" id="progressText">no of no</span>
+            <div class="q-box" id="card">
+                <div class="front">
+                    <div id="question"></div>  
+                </div>
+                <div class="back">
+                    <div id="answer"></div> 
+                </div>
+            </div>
+            
+        <div class="btn-group w-100 rounded-pill overflow-hidden" role="group" aria-label="Basic example">
+                <button type="button" class="btn flex-fill" style="flex:2" onclick="prevQuestion()">&lt; Prev</button>
+                <button type="button" class="btn flex-fill" style="flex:6" id="flipBtn" onclick="flipCard()">Show Answer</button>
+                <button type="button" class="btn flex-fill" style="flex:2" onclick="nextQuestion()">Next &gt;</button>
+        </div>
+    <script src="script.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

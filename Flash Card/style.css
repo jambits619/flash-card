@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    
+}
+
+body {
+    
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+}
+
+.progress {
+    width: 100%;
+    height: 30px !important;
+    margin-bottom: 1px;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 15px !important;
+}
+
+.progress .progress-bar {
+    background-color: #313131;
+    line-height: 100%;
+    border-radius: 15px;
+    
+}
+
+.progress .progress-bar[data-value="100"] {
+  background-color: #16f202cf;
+  color: black;
+}
+
+.no-of-items {
+    white-space: nowrap;
+
+}
+
+.bar {
+    width: 300px;
+    height: 10px;
+   /* border: 2px solid; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+
+.btn-group  {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: #c1c1c1 ;
+;
+}
+
+.btn-group button {
+    max-width: 100%;
+    height: 40px;
+    border-radius: 0;
+}
+
+.btn-group button:nth-child(1):hover,
+.btn-group button:nth-child(2):hover,
+.btn-group button:nth-child(3):hover {
+    background-color: #313131;
+    color: white;
+}
+.q-box {
+    width: 330px;
+    height: 300px;
+    background-color: transparent;
+    perspective: 1000px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    
+}
+
+.q-box.flip {
+    transform: rotateY(180deg);
+}
+
+.front ,.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    backface-visibility: hidden;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.front {
+    background-color: #c1c1c1 ;
+    color: rgb(0, 0, 0);
+    border-radius: 15px; /* Rounds all four corners */
+    padding: 10px;
+}
+
+.back {
+    background-color: #16f202cf;
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 15px; /* Rounds all four corners */
+    padding: 10px
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-title {
+    font-weight: 800;
+    font-size: 40px;
+}
