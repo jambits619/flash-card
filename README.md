@@ -1,5 +1,7 @@
 # flash-card
 
+#Project URL
+https://github.com/jambits619/flash-card
 
 ## Description
 A simple static website that utilize flash card application for learning 
